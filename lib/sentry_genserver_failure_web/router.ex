@@ -1,5 +1,7 @@
 defmodule SentryGenserverFailureWeb.Router do
   use SentryGenserverFailureWeb, :router
+  use Plug.ErrorHandler
+  use Sentry.Plug
 
   pipeline :browser do
     plug :accepts, ["html"]

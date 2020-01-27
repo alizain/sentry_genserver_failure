@@ -11,9 +11,9 @@ defmodule SentryGenserverFailure.Application do
       # Start the Ecto repository
       SentryGenserverFailure.Repo,
       # Start the endpoint when the application starts
-      SentryGenserverFailureWeb.Endpoint
-      # Starts a worker by calling: SentryGenserverFailure.Worker.start_link(arg)
-      # {SentryGenserverFailure.Worker, arg},
+      SentryGenserverFailureWeb.Endpoint,
+      # The test GenServer
+      SentryGenserverFailure.Stack,
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

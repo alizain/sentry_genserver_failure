@@ -1,5 +1,6 @@
 defmodule SentryGenserverFailureWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :sentry_genserver_failure
+  use Sentry.Phoenix.Endpoint
 
   socket "/socket", SentryGenserverFailureWeb.UserSocket,
     websocket: true,
